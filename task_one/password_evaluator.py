@@ -18,7 +18,7 @@ class PasswordEvaluator:
             avoid: Optional[List[str]] = None
     ) -> None:
         """
-        Initialise a Password.
+        Initialise a PasswordEvaluator.
 
         :param password: the password to evaluate
         :param avoid: a list of strings to avoid including in the
