@@ -17,7 +17,6 @@ python -m password_evaluator [PASSWORD] [PATH]
 
 It still isn't quite right - I haven't found the right structure of operations, and changing the order of operations changes the required number of operations. I haven't found a way to guarantee a minimum number of steps and correctness.
 ** Task Two
-Spent too long on Task One - should have spent the additional time here.
 *** Usage
 #+begin_src shell
 cd task_two
@@ -28,6 +27,8 @@ python app.py &
 curl localhost:8080/London
 # {"city":"London","temperature":17.45,"timestamp":"Sun, 23 Oct 2022 12:33:24 GMT"}
 #+end_src
+*** Approach
+Spent too long on Task One - should have spent the additional time here.
 *** Technical Choices
 **** Libraries
 - Flask
@@ -53,7 +54,7 @@ Just a persistence wrapper for convenience.
 ***** =CityWeatherService=
 Encapsulates the logic required to perform the task. Dependencies injected for testability, extensibility, etc.
 ***** =WeatherClient=
-Simple requests Session wrapper. Improvements would be: API token from env, add more complex parameter parsing and passing. More defensive code (=KeyError=), etc.
+Simple requests Session wrapper. Improvements would be: API token from env, add more complex parameter parsing and passing. More defensive code (=KeyError=), and similar.
 *** Questions
 The requirements say:
 #+begin_quote
