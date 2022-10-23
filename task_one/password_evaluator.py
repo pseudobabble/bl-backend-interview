@@ -8,7 +8,8 @@ from collections import Counter, defaultdict
 
 class PasswordEvaluator:
     """
-    This class represents a secure password.
+    This class evaluates a password for security and
+    makes any necessary changes to make it secure.
     """
 
     def __init__(
